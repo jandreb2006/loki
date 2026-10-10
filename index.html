@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        if (!localStorage.getItem("currentUser")) {
+            window.location.replace("login.html");
+        }
+    </script>
+</head>
+<body>
+
+    <header class="navbar">
+        <h2>My Website</h2>
+        <button id="logoutButton">Log Out</button>
+    </header>
+
+    <main class="main-content">
+        <h1 id="welcomeMessage">Welcome!</h1>
+
+        <p>
+            You have successfully logged in.
+            Welcome to your main page!
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <h2>About Us</h2>
+                <p>Learn more about this website.</p>
+            </div>
+
+            <div class="card">
+                <h2>Explore</h2>
+                <p>Discover the content of our website.</p>
+            </div>
+
+            <div class="card">
+                <h2>Get Started</h2>
+                <p>Start exploring your new account.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
